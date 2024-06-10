@@ -6,17 +6,16 @@
 
 using namespace std;
 
-// Kelas Pengguna untuk registrasi dan login pengguna
 class Pengguna {
 public:
     string namaPengguna;
     string kataSandi;
 
-    Pengguna() {}  // Konstruktor default
+    Pengguna() {}  
     Pengguna(string nama, string sandi) : namaPengguna(nama), kataSandi(sandi) {}
 };
 
-// Kelas Film untuk menyimpan informasi film
+
 class Film {
 public:
     string judul;
@@ -25,7 +24,7 @@ public:
     Film(string j, string w) : judul(j), waktu(w) {}
 };
 
-// Kelas Bioskop untuk mengelola film dan kursi
+
 class Bioskop {
 public:
     string nama;
@@ -158,13 +157,11 @@ public:
 int main() {
     SistemPemesananTiket sistem;
 
-    // Menambahkan beberapa data awal
     Bioskop bioskop1("Bioskop XXI", 5, 5);
     bioskop1.tambahFilm("Agak lain,", "10:00");
     bioskop1.tambahFilm("Dilean 1990,", "13:00");
     sistem.tambahBioskop(bioskop1);
 
-    // Menampilkan judul
     cout << "Selamat Datang di ToxID" << endl << endl;
 
     int pilihan;
